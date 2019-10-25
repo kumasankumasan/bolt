@@ -174,13 +174,16 @@ a {
 
 .work-content_mail {
   transition: .3s;
+  color: #fff;
+  padding: 14px 20px;
+  background-color: #74cfae;
 }
 
 .work-content_mail_p {
   font-size: 12px;
-  padding: 14px 20px;
-  background-color: #74cfae;
-  color: #fff;
+  
+  display:inline-block;
+  vertical-align: middle;
 }
 
 .work-content_mail:hover {
