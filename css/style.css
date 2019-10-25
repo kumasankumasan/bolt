@@ -20,14 +20,19 @@
 	content:'\f0e7';
 	font-family:'Font Awesome 5 Free';
   font-weight:900;
-  color: #74cfae;
+  color: #4e4e4e	
+  ;
+}
+
+a {
+  text-decoration: none;
 }
 
 .contact {
-  width: 40px;
   padding: 14px 12px;
   color: #fff;
   background-color: #74cfae;
+  transition: .3s;
 }
 
 .contact:hover {
@@ -37,6 +42,7 @@
 
 .contact p {
   font-size: 12px;
+  font-family: Lato;
 }
 
 .contact p:hover {
@@ -56,11 +62,13 @@
   font-weight: 700;
   color: #74cfae;
   margin: 20px;
+  font-family: Raleway;
 }
 
 .title-content p {
   font-size: 30px;
   color: #c0c0c0;
+  font-family: Lato;
 }
 
 /*「Bolt Theme」の部分*/
@@ -90,10 +98,12 @@
 .can-content_text h1 {
   font-size: 24px;
   padding-bottom: 35px;
+  font-family: Raleway;
 }
 
 .can-content_text p {
   font-size: 20px;
+  font-family: Lato;
 }
 
 /*「WHAT WE CAN DO?」の部分*/
@@ -110,6 +120,7 @@
 .work-content h1 {
   text-align: center;
   font-size: 24px;
+  font-family: Raleway;
 }
 
 .work-content_imgs {
@@ -118,7 +129,12 @@
 
 .work-content_img {
   opacity: 0.7;
-  margin-right: 100px;
+  transition: .3s;
+  margin-left: 100px;
+  margin-bottom: 80px;
+  float: left;
+  height: 300px;
+  width: 300px;
 }
 
 .work-content_img:hover {
@@ -126,14 +142,11 @@
   transition: .3;
 }
 
-.work-content_img:nth-child(-n+3) {
-  margin-bottom: 80px; 
-}
-
 .work-content_text {
   display: flex;
   justify-content:center;
   padding-top: 10px; 
+  font-family: Lato;
 }
 
 .work-content_text p {
@@ -142,13 +155,13 @@
 }
 
 .work-content_mail {
-  width: 100px;
-  height: 14px;
   font-size: 12px;
   padding: 14px 20px;
   text-align: center;
   background-color: #74cfae;
   color: #fff;
+  white-space: nowrap;
+  transition: .3s;
 }
 
 .work-content_mail:hover {
@@ -168,6 +181,7 @@
 
 .skill-content h1 {
   font-size: 24px;
+  font-family: Raleway;
 }
 
 .skill-content_imgs {
@@ -180,6 +194,7 @@
 .skill-content_imgs p {
   font-size: 16px;
   padding-top: 12px;
+  font-family: Lato;
 }
 
 .skill-content_img {
@@ -203,7 +218,7 @@
 }
 
 .link-content_box {
-  width: 165px;
+  width: 145px;
   padding: 20px;
   transition: all .3s;
 }
@@ -226,6 +241,7 @@
   padding-top: 20px;
   padding-bottom: 25px;
   color: #fff;
+  font-family: Lato;
 }
 
 .footer p {
