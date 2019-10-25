@@ -1,31 +1,38 @@
 
 .inner {
-  padding-left: 250px;
-  padding-right: 250px;
+  width: 1100px;
+  margin: 0 auto;
 }
 
-.header {
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding-top:15px;
-  padding-bottom: 15px;
+body {
+  font-family: 'Leno';
 }
 
-.icon {
-  padding-top: 15px;
-}
-
-.icon::before {
-	content:'\f0e7';
-	font-family:'Font Awesome 5 Free';
-  font-weight:900;
-  color: #4e4e4e	
-  ;
+.heading {
+  font-family: 'Raleway';
 }
 
 a {
   text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top:15px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+.bolt-icon {
+  color: #4e4e4e;
+  font-size: 44px;
 }
 
 .contact {
@@ -40,101 +47,112 @@ a {
   transition: .3s;
 }
 
-.contact p {
+.contact-p {
   font-size: 12px;
-  font-family: Lato;
 }
 
-.contact p:hover {
+.contakt-p:hover {
   color: #333;
   transition: all .3s;
 }
 
 /*「Bolt Theme」の部分*/
-.title-content {
+.title {
   background-color:#f2f2f2;
-  padding: 250px;
+}
+
+.title-content {
+  padding-top: 250px;
+  padding-bottom: 250px;
   text-align: center;
 }
 
-.title-content h1 {
+.title_title {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  margin: 20px;
-  font-family: Raleway;
+  padding-bottom: 20px;
 }
 
-.title-content p {
+.subtitle {
   font-size: 30px;
   color: #c0c0c0;
-  font-family: Lato;
 }
 
 /*「Bolt Theme」の部分*/
 
 /*「WHAT WE CAN DO?」の部分*/
-.can-content {
-  margin: 0 auto;
+.article {
   background-color: #74cfae;
+}
+
+.can-content {
   color: #fff;
 }
 
 .can-content_box {
   display: flex;
   justify-content: space-around;
+  padding-top: 50px; 
 }
 
 .iphone {
-  padding-top: 50px;
   display: inline-block;
 }
 
 .can-content_text {
   text-align: center;
-  padding: 50px;
 }
 
-.can-content_text h1 {
+.can-content_title {
   font-size: 24px;
   padding-bottom: 35px;
-  font-family: Raleway;
 }
 
-.can-content_text p {
+.can-content_text2 {
   font-size: 20px;
-  font-family: Lato;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 /*「WHAT WE CAN DO?」の部分*/
 
 /*「OUR LATEST WORK」の部分*/
-.work-content {
+.section {
   background-color: #f2f2f2;
+}
+
+.work-content {
   padding-top: 60px;
-  padding-left: 150px; 
-  padding-right: 150px; 
   padding-bottom: 70px;
 }
 
 .work-content h1 {
   text-align: center;
   font-size: 24px;
-  font-family: Raleway;
 }
 
 .work-content_imgs {
-  padding-top: 40px; 
+  padding-top: 40px;
 }
 
 .work-content_img {
   opacity: 0.7;
   transition: .3s;
-  margin-left: 100px;
-  margin-bottom: 80px;
   float: left;
-  height: 300px;
-  width: 300px;
+  margin-left: 100px; 
+}
+
+.work-content_img:nth-child(-n+3) {
+  margin-bottom: 80px;
+}
+
+.work-content_img:first-child {
+  margin-left: 0; 
+}
+
+.work-content_img:nth-child(4) {
+  margin-left: 0; 
 }
 
 .work-content_img:hover {
@@ -142,26 +160,26 @@ a {
   transition: .3;
 }
 
-.work-content_text {
+.work-content-text {
   display: flex;
-  justify-content:center;
-  padding-top: 10px; 
-  font-family: Lato;
+  justify-content: space-around;
+  padding-top: 90px;   
 }
 
-.work-content_text p {
+.work-content-text_p {
   padding-right: 90px;
-  display: inline-block;
+  width: 550px;
 }
 
 .work-content_mail {
+  transition: .3s;
+}
+
+.work-content_mail_p {
   font-size: 12px;
   padding: 14px 20px;
-  text-align: center;
   background-color: #74cfae;
   color: #fff;
-  white-space: nowrap;
-  transition: .3s;
 }
 
 .work-content_mail:hover {
@@ -172,8 +190,11 @@ a {
 /*「OUR LATEST WORK」の部分*/
 
 /*「OUR SKILLS」の部分*/
-.skill-content {
+.figure {
   background-color: #4e4e4e;
+}
+
+.skill-content {
   color: #fff;
   padding-top: 70px;
   text-align: center;
@@ -181,7 +202,6 @@ a {
 
 .skill-content h1 {
   font-size: 24px;
-  font-family: Raleway;
 }
 
 .skill-content_imgs {
@@ -194,7 +214,6 @@ a {
 .skill-content_imgs p {
   font-size: 16px;
   padding-top: 12px;
-  font-family: Lato;
 }
 
 .skill-content_img {
@@ -209,18 +228,25 @@ a {
 /*「OUR SKILLS」の部分*/
 
 /*アイコンの部分*/
-.link-content {
+.link-icon {
   background-color:#f2f2f2;
+}
+
+.link-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .link-content_box {
   width: 145px;
   padding: 20px;
   transition: all .3s;
+  color: #74cfae;
+  text-align: center;
+  font-size: 50px;
 }
 
 .link-content_box:hover {
@@ -229,23 +255,19 @@ a {
   
 }
 
-.link-content i {
-  color: #74cfae;
-  text-align: center;
-  font-size: 50px;
-}
-
 /*アイコンの部分*/
 .footer {
   background-color: #74cfae;
+}
+
+.footer-inner {
   padding-top: 20px;
   padding-bottom: 25px;
   color: #fff;
-  font-family: Lato;
 }
 
-.footer p {
-  float: right;
+.footer-text {
+  text-align: right;
 }
 
 .clearfix:after {
