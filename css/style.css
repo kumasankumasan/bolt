@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Leno';
+  text-align: center;
 }
 
 .heading {
@@ -16,10 +17,17 @@ a {
   text-decoration: none;
 }
 
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 .header {
   position: fixed;
   background: #fff;
   width: 100%;
+  z-index: 999;
 }
 
 .header-inner {
@@ -27,7 +35,6 @@ a {
   justify-content: space-between;
   padding-top:15px;
   padding-bottom: 15px;
-  margin: 0 auto;
 }
 
 .bolt-icon {
@@ -44,7 +51,6 @@ a {
 
 .contact:hover {
   color: #333;
-  transition: .3s;
 }
 
 .contact-p {
@@ -62,16 +68,15 @@ a {
 }
 
 .title-content {
-  padding-top: 250px;
+  padding-top: 324px;
   padding-bottom: 250px;
-  text-align: center;
 }
 
 .title_title {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .subtitle {
@@ -93,26 +98,21 @@ a {
 .can-content_box {
   display: flex;
   justify-content: space-around;
-  padding-top: 50px; 
+  padding-top: 50px;
 }
 
 .iphone {
   display: inline-block;
 }
 
-.can-content_text {
-  text-align: center;
-}
-
 .can-content_title {
   font-size: 24px;
-  padding-bottom: 35px;
 }
 
 .can-content_text2 {
   font-size: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-left: 100px;
+  margin-top: 35px;
 }
 
 /*「WHAT WE CAN DO?」の部分*/
@@ -127,52 +127,48 @@ a {
   padding-bottom: 70px;
 }
 
-.work-content h1 {
-  text-align: center;
+.work-content_title {
   font-size: 24px;
 }
 
 .work-content_imgs {
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 .work-content_img {
-  opacity: 0.7;
-  transition: .3s;
   float: left;
-  margin-left: 100px; 
+  margin-left: 100px;
+  margin-top: 80px;
+  opacity: 0.7;
+  transition: .3s; 
 }
 
 .work-content_img:nth-child(-n+3) {
-  margin-bottom: 80px;
+  margin-top: 0;
 }
 
-.work-content_img:first-child {
-  margin-left: 0; 
-}
-
-.work-content_img:nth-child(4) {
+.work-content_img:nth-child(3n+1) {
   margin-left: 0; 
 }
 
 .work-content_img:hover {
   opacity: 1;
-  transition: .3;
 }
 
 .work-content-text {
+  margin-top: 90px;
   display: flex;
-  justify-content: space-around;
-  text-align: center;
-  padding-top: 90px;   
+  justify-content: center;
 }
 
 .work-content-text_p {
-  padding-right: 90px;
+  float: left;
+  margin-right: 90px;
   width: 550px;
 }
 
 .work-content_mail {
+  float: left;
   transition: .3s;
   color: #fff;
   padding: 14px 20px;
@@ -181,14 +177,12 @@ a {
 
 .work-content_mail_p {
   font-size: 12px;
-  
   display:inline-block;
   vertical-align: middle;
 }
 
 .work-content_mail:hover {
   color: #333;
-  transition: .3s;
 }
 
 /*「OUR LATEST WORK」の部分*/
@@ -201,7 +195,7 @@ a {
 .skill-content {
   color: #fff;
   padding-top: 70px;
-  text-align: center;
+  padding-bottom: 100px;
 }
 
 .skill-content h1 {
@@ -212,12 +206,12 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 100px;
+  margin-top: 70px 
 }
 
 .skill-content_imgs p {
   font-size: 16px;
-  padding-top: 12px;
+  margin-top: 12px;
 }
 
 .skill-content_img {
@@ -228,7 +222,6 @@ a {
   margin-right: 0;
 }
 
-
 /*「OUR SKILLS」の部分*/
 
 /*アイコンの部分*/
@@ -238,7 +231,6 @@ a {
 
 .link-content {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -254,9 +246,7 @@ a {
 }
 
 .link-content_box:hover {
-  background-color: #fff;
-  transition: all .3s;
-  
+  background-color: #fff;  
 }
 
 /*アイコンの部分*/
@@ -272,10 +262,4 @@ a {
 
 .footer-text {
   text-align: right;
-}
-
-.clearfix:after {
-  display: block;
-  content: "";
-  clear: both;
 }
