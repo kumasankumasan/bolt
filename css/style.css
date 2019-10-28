@@ -164,7 +164,7 @@ a {
 .work-content-text_p {
   float: left;
   margin-right: 90px;
-  width: 550px;
+  width: 530px;
 }
 
 .work-content_mail {
@@ -198,7 +198,7 @@ a {
   padding-bottom: 100px;
 }
 
-.skill-content h1 {
+.skill-content_title {
   font-size: 24px;
 }
 
