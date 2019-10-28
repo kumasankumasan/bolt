@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Leto';
+  font-family: 'Lato';
   text-align: center;
 }
 
@@ -22,6 +22,8 @@ a {
   content: "";
   clear: both;
 }
+
+/*PCのスタイル*/
 
 /*「header」の部分*/
 .header {
@@ -246,6 +248,8 @@ a {
 }
 
 /*アイコンの部分*/
+
+/*「footer」の部分*/
 .footer {
   background-color: #74cfae;
 }
@@ -259,4 +263,121 @@ a {
 .footer-text {
   text-align: right;
 }
+/*「footer」の部分*/
 
+/*PCのスタイル*/
+
+/*TABのスタイル*/
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+.inner {
+  width: 97%;
+}
+
+
+/*「WHAT WE CAN DO?」の部分*/ 
+.article {
+  background-color: #74cfae;
+}
+
+.can-content {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.can-content_box {
+  display: list-item;  /* 縦に並べる */
+}
+
+.iphone {
+  margin-bottom: 20px; 
+}
+
+.can-content_title {
+  margin-bottom: 35px;
+}
+
+.can-content_text2 {
+  margin-left: 0; 
+}
+/*「WHAT WE CAN DO?」の部分*/ 
+
+/*「OUR LATEST WORK」の部分*/
+
+.work-content_imgs {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-content_img {
+  margin-top: 0;
+  margin-left: 0; 
+  opacity: 0.7;
+  transition: .3s; 
+}
+
+.work-content_img:nth-child(3n+1) {
+  margin-top: 80px; 
+}
+
+.work-content_img:first-child {
+  margin-top: 0; 
+}
+
+.work-content-text {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-content-text_p {
+  margin-right: 0;
+  width: 97%;
+}
+
+.work-content_mail {
+  margin-top:40px;
+  margin-left:auto;
+  margin-right:auto;
+  width: 50px; 
+}
+
+.work-content_mail:hover {
+  color: #333;
+}
+/*「OUR LATEST WORK」の部分*/
+
+
+/*「OUR SKILLS」の部分*/
+.skill-content_imgs {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skill-content_img {
+  margin-top: 88px;
+  margin-right: 0; 
+}
+
+.skill-content_img:first-child {
+  margin-top: 0; 
+}
+
+.skill-content_imgs p {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.skill-content_img:last-child {
+  margin-right: 0;
+}
+
+/*「OUR SKILLS」の部分*/
+
+  
+ }
+/*TABのスタイル*/
