@@ -23,8 +23,9 @@ a {
   clear: both;
 }
 
-/*PCのスタイル*/
 
+/*PCのスタイル*/
+@media screen and (min-width:1200px){
 /*「header」の部分*/
 .header {
   position: fixed;
@@ -40,9 +41,13 @@ a {
   justify-content: space-between;
 }
 
-.bolt-icon {
+.fa-bolt {
   font-size: 44px;
   color: #4e4e4e;
+}
+
+#hamburger {
+  display: none;
 }
 
 .contact {
@@ -86,7 +91,6 @@ a {
   font-size: 30px;
   color: #c0c0c0;
 }
-
 /*「Bolt Theme」の部分*/
 
 /*「WHAT WE CAN DO?」の部分*/
@@ -264,16 +268,78 @@ a {
   text-align: right;
 }
 /*「footer」の部分*/
-
+}
 /*PCのスタイル*/
+
 
 /*TABのスタイル*/
 
-@media (min-width: 768px) and (max-width: 1199px){
+@media (min-width: 768px) and (max-width: 1199px) {
 
 .inner {
   width: 97%;
 }
+
+/*「header」の部分*/
+.header {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-inner {
+  padding-top:15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bolt {
+  font-size: 44px;
+  color: #4e4e4e;
+}
+
+#hamburger {
+  display: none;
+}
+
+.contact {
+  padding: 14px 12px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #74cfae;
+  transition: .3s;
+}
+
+.contact:hover {
+  color: #333;
+}
+
+/*「header」の部分*/
+
+/*「Bolt Theme」の部分*/
+.title {
+  background-color:#f2f2f2;
+}
+
+.title-content {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+.title_title {
+  margin-bottom: 20px;
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #c0c0c0;
+}
+/*「Bolt Theme」の部分*/
 
 
 /*「WHAT WE CAN DO?」の部分*/ 
@@ -284,6 +350,7 @@ a {
 .can-content {
   padding-top: 50px;
   padding-bottom: 25px;
+  color: #fff;
 }
 
 .can-content_box {
@@ -296,14 +363,27 @@ a {
 
 .can-content_title {
   margin-bottom: 35px;
+  font-size: 24px;
 }
 
 .can-content_text2 {
-  margin-left: 0; 
+  font-size: 20px;
 }
 /*「WHAT WE CAN DO?」の部分*/ 
 
 /*「OUR LATEST WORK」の部分*/
+.section {
+  background-color: #f2f2f2;
+}
+
+.work-content {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.work-content_title {
+  font-size: 24px;
+}
 
 .work-content_imgs {
   margin-top: 40px;
@@ -312,8 +392,271 @@ a {
 }
 
 .work-content_img {
-  margin-top: 0;
-  margin-left: 0; 
+  margin: 0 auto;
+  width: 300px;
+  height: 300px; 
+  opacity: 0.7;
+  transition: .3s;
+}
+
+.work-content_img:nth-child(3n+1) {
+  margin-top: 80px; 
+}
+
+.work-content_img:first-child {
+  margin-top: 0; 
+}
+
+.work-content-text {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-content-text_p {
+  width: 97%;
+}
+
+.work-content_mail {
+  margin-top:40px;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 14px 20px;
+  font-size: 12px;
+  width: 50px;
+  color: #fff;
+  background-color: #74cfae;
+  transition: .3s; 
+}
+
+.work-content_mail:hover {
+  color: #333;
+}
+/*「OUR LATEST WORK」の部分*/
+
+/*「OUR SKILLS」の部分*/
+.figure {
+  background-color: #4e4e4e;
+}
+
+.skill-content {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  color: #fff;
+}
+
+.skill-content_title {
+  font-size: 24px;
+}
+.skill-content_imgs {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-content_img {
+  margin-top: 88px;
+}
+
+.skill-content_img:first-child {
+  margin-top: 0; 
+}
+
+.skill-content_imgs p {
+  margin-top: 12px;
+  font-size: 16px;
+}
+/*「OUR SKILLS」の部分*/
+
+/*アイコンの部分*/
+.link-icon {
+  background-color:#f2f2f2;
+}
+
+.link-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.link-content_box {
+  width: 145px;
+  padding: 20px;
+  font-size: 50px;
+  color: #74cfae;
+  transition: all .3s;
+}
+
+.link-content_box:hover {
+  background-color: #fff;  
+}
+
+/*アイコンの部分*/
+
+/*「footer」の部分*/
+.footer {
+  background-color: #74cfae;
+}
+
+.footer-inner {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+.footer-text {
+  text-align: right;
+}
+/*「footer」の部分*/ 
+}
+/*TABのスタイル*/
+
+/*SPのスタイル*/
+@media screen and (max-width:767px){
+.inner {
+width: 97%;
+}
+/*「header」の部分*/
+.header {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-inner {
+  padding-top:15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-bolt {
+  font-size: 44px;
+  color: #4e4e4e;
+}
+
+.contact {
+  display:none;
+}
+
+.contact:hover {
+  color: #333;
+}
+/*メニュー部分*/
+#hamburger {
+  background-color: #fff; /*メニュー背景色*/
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px 40px; /*メニュー内部上下左右余白*/
+  position: fixed;
+  right: -300px; /*メニュー横幅①と合わせる*/
+  top: 15px;
+  width: 300px; /*メニュー横幅①*/
+  z-index: 1000;
+}
+
+/*メニューアイコン部分は疑似要素で*/
+#hamburger::before {
+  background-color: #fff; /*ボタン部分背景色*/
+  color: #ddd; /*アイコン（フォント）色*/
+  content: "≡"; /*メニューアイコン*/
+  display: block;
+  font-size: 30px; /*アイコン（フォント）サイズ*/
+  line-height: 24px; /*縦位置中央化*/
+  position: absolute;
+  right: 100%;
+  text-align: center;
+  top: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/*「header」の部分*/
+
+/*「main」の部分*/
+.main {
+  padding-top: 73px;
+}
+/*「main」の部分*/
+
+/*「Bolt Theme」の部分*/
+.title {
+  background-color:#f2f2f2;
+}
+
+.title-content {
+  padding-top: 160px;
+  padding-bottom: 130px;
+}
+
+.title_title {
+  margin-bottom: 20px;
+  font-size: 80px;
+  font-weight: 700;
+  color: #74cfae;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #c0c0c0;
+}
+/*「Bolt Theme」の部分*/
+
+/*「WHAT WE CAN DO?」の部分*/
+.article {
+  background-color: #74cfae;
+}
+
+.can-content {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+.can-content_box {
+  display: list-item;  /* 縦に並べる */
+}
+
+.iphone {
+  margin-bottom: 20px; 
+}
+
+.can-content_title {
+  margin-bottom: 35px;
+  font-size: 24px;
+}
+
+.can-content_text2 {
+  font-size: 20px;
+}/*「WHAT WE CAN DO?」の部分*/
+
+/*「OUR LATEST WORK」の部分*/
+.section {
+  background-color: #f2f2f2;
+}
+
+.work-content {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.work-content_title {
+  font-size: 24px;
+}
+
+.work-content_imgs {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-content_img {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px; 
   opacity: 0.7;
   transition: .3s; 
 }
@@ -333,7 +676,6 @@ a {
 }
 
 .work-content-text_p {
-  margin-right: 0;
   width: 97%;
 }
 
@@ -341,7 +683,12 @@ a {
   margin-top:40px;
   margin-left:auto;
   margin-right:auto;
-  width: 50px; 
+  padding: 14px 20px;
+  font-size: 12px;
+  width: 50px;
+  color: #fff;
+  background-color: #74cfae;
+  transition: .3s; 
 }
 
 .work-content_mail:hover {
@@ -349,18 +696,28 @@ a {
 }
 /*「OUR LATEST WORK」の部分*/
 
-
 /*「OUR SKILLS」の部分*/
+.figure {
+  background-color: #4e4e4e;
+}
+
+.skill-content {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  color: #fff;
+}
+
+.skill-content_title {
+  font-size: 24px;
+}
 .skill-content_imgs {
   margin-top: 70px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .skill-content_img {
   margin-top: 88px;
-  margin-right: 0; 
 }
 
 .skill-content_img:first-child {
@@ -371,13 +728,48 @@ a {
   margin-top: 12px;
   font-size: 16px;
 }
-
-.skill-content_img:last-child {
-  margin-right: 0;
-}
-
 /*「OUR SKILLS」の部分*/
 
-  
- }
-/*TABのスタイル*/
+/*アイコンの部分*/
+.link-icon {
+  background-color:#f2f2f2;
+}
+
+.link-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-content_box {
+  width: 145px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 50px;
+  color: #74cfae;
+  transition: all .3s;
+}
+
+.link-content_box:hover {
+  background-color: #fff;  
+}
+
+/*アイコンの部分*/
+
+/*「footer」の部分*/
+.footer {
+  background-color: #74cfae;
+}
+
+.footer-inner {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+.footer-text {
+  text-align: right;
+}
+}
+/*SPのスタイル*/
