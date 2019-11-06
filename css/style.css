@@ -310,8 +310,7 @@ a {
   }
 
   .work-content_img:nth-child(3n+1) {
-    margin-top: 80px; 
-    margin-left:auto;
+    margin: 80px auto 0;
   }
 
   .work-content_img:first-child {
