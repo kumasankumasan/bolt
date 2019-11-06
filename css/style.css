@@ -253,8 +253,7 @@ a {
 }
 
 .footer-inner {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0 25px;
   color: #fff;
 }
 
