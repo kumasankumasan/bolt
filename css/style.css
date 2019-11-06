@@ -381,8 +381,7 @@ a {
 
   /*「Bolt Theme」の部分*/
   .title-content {
-    padding-top: 160px;
-    padding-bottom: 130px;
+    padding: 160px 0 130px;
   }
   /*「Bolt Theme」の部分*/
 
