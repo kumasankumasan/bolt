@@ -280,7 +280,7 @@ a {
   }
 
   .can-content_box {
-    display: list-item;
+    display: block;
   }
 
   .iphone {
@@ -293,7 +293,6 @@ a {
 
   .can-content_text2 {
     margin-left: auto;
-    margin-top: auto;
   }
   /*「WHAT WE CAN DO?」の部分*/
 
@@ -305,8 +304,6 @@ a {
 
   .work-content_img {
     float: none;
-    margin-top: auto;
-    margin-left: auto;
     width: 300px;
     height: 300px;
     margin: 0 auto; 
@@ -328,14 +325,11 @@ a {
 
   .work-content-text_p {
     float: none;
-    margin-right: auto;
-    width: 97%;
+    width: 100%;
   }
 
   .work-content_mail {
-    margin-top:40px;
-    margin-left:auto;
-    margin-right:auto;
+    margin:40px auto 0;
     width: 50px;
     display: block!important;
   }
@@ -349,9 +343,7 @@ a {
   }
 
   .skill-content_img {
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 88px; 
+    margin: 88px auto 0; 
   }
 
   .skill-content_img:first-child {
@@ -360,14 +352,13 @@ a {
 
   .skill-content_img:last-child {
     margin-right: auto;
-    margin-top: none;
   }
   /*「OUR SKILLS」の部分*/
 
   /*アイコンの部分*/
   .link-content_box {
-    width: 97%;
-    padding: 0;
+    width: 25%;
+    padding: 20px 0 20px;
   }
   /*アイコンの部分*/
 }
@@ -406,7 +397,6 @@ a {
 
   .link-content_box {
     width: 100%;
-    margin-top: 20px;
   }
   /*アイコンの部分*/
 }  
